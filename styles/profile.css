@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+header {
+    font-family: "Sofia", sans-serif;
+    font-size: 17px;  
+}
+
+body {
+    margin: 0;
+    background-image: url("/images/Original Pic.jpg");
+    background-size: cover;  
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 75% 100%;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background: transparent;
+    height: 50px;
+    width: 100%;
+    color: #e5e1e1;
+}
+.menu_bar {
+    background-color: rgb(233, 5, 241);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-style: outset;
+
+}
+
+.logo {
+    width: 120px;
+    border-style: groove;
+    border-radius: 25px;
+}
+
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_bar ul li{
+    padding: 10px 20px;
+    position: relative;
+
+}
+.menu_bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 0.2s;
+
+}
+.menu_bar ul li:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+}
+.menu_bar ul li a:hover {
+    color: rgb(156, 165, 179);
+    font-weight: 700;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #a43d9d;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.menu_bar ul li a:hover + .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #a43d9d;
+}
+
+.dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+.dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+
+}
+.sub-menu-wrap {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+.sub-menu {
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.user-info p{
+    color: #1a1a1a;
+}
+.user-info h3{
+    color:#1a1a1a;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+
+}
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+    margin-left: 10px;
+}
+
+.sub-menu-link p{
+    width: 100%;
+
+}
+
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: tranform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+
+}
+.sub-menu-link:hover p{
+    font-weight: 700;
+
+}
+footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 150%;
+    height: 90px;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+@media only screen and (max-width: 768px) {
+    body {
+        /* Adjust styles for smaller screens here */
+        background-size: cover; /* Example change */
+    }
+
+    .menu_bar {
+        /* Adjust styles for smaller screens here */
+        height: 70px;
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    body {
+        /* Adjust styles for smaller screens here */
+        width: 100%;
+    }
+
+    .menu_bar {
+        /* Adjust styles for smaller screens here */
+        height: 70px;
+    }
+}
+
+
+

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: goldenrod;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+
+}
+.container .heading h3 {
+    padding-bottom: 10px;
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+}
+
+.container .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .gallery .dream {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.container .gallery .dream img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.container .btn {
+    margin: 40px 0 70px 0;
+    background: #222;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+.container .btn a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width: 769px) {
+    .container .gallery {
+        flex-direction: column;
+    }
+
+    .container .gallery .dream {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    .container .heading {
+        width: 100%;
+    }
+
+    .container .heading .h3 {
+        font-size: 1em;
+    }
+}
