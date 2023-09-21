@@ -12,7 +12,7 @@ body {
     background-image: url("/images/events\ Background.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     color: #777;
     display: flex;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
 .item-container {
     position: relative;
     margin: 24px;
-    width: 320px;
+    width: 300px;
     border-style: none;
     border-radius: 48px 0;
     height: 570px;
@@ -60,7 +60,7 @@ body {
 .overlay {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 396px;
     background-color: rgba(24, 83, 122, 0.6);
     opacity: 0;
     transition: height linear 0.4s, opacity linear 0.2s;
